@@ -28,7 +28,7 @@ jobs:
         context: ./
         file: ./Vk.Post.Learn/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/Vk.Post.Learn:latest
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/vk.post.learn:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
